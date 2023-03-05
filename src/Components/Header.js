@@ -32,7 +32,7 @@ const Header = () => {
                 setWind(response.data.wind.speed);
                 setHumidity(response.data.main.humidity);
                 setTemp(response.data.main.temp);
-                setIcon(`http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`);
+                setIcon(`https://openweathermap.org/img/w/${response.data.weather[0].icon}.png`);
                 setDescription(response.data.weather[0].description[0].toUpperCase() + response.data.weather[0].description.substring(1));
             })
             .catch((error) => {
